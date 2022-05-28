@@ -5,6 +5,7 @@
         <title>VWIA</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Images/VWIA_lg.png" rel="icon" type="img/png"/>
         <link href="EstiloPrincipal.css" rel="stylesheet" type="text/css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
@@ -12,23 +13,57 @@
     
     <body>
         <div class="Contenedor">
-            <div class="Cabecera"
+            <div class="Cabecera">
                  
                  <header>
                      <figure>
-                         <img src="Images/VWIA_lg.png" alt=""/>
+                         <img class="cabecera_img" src="Images/VWIA_lg.png" alt=""/>
                      </figure>
-                     <h1 class="cabecera_h1"><p>Virtual Warehouse and</p>
-                         <p>Inventory Assistant</p></h1>
+                     <h1 class="cabecera_h1"><p>Virtual Warehouse and</p> <p>Inventory Assistant</p></h1>   
                      <p class="cabecera_frase">El asistente de contaduría que tu empresa necesita.</p>
-                     
+                 </header>
+                    
                      <nav class="nav">
                          <a class="link_1" href="">Nosotros</a>
                          <a class="link_2" href="">Contáctenos</a>
                          <a class="link_3" href="">Registrarse</a>
                      </nav>
-                     
-                </header>            
-        </div> 
+            </div>
+            
+            <div class="Galeria">
+                <div class="Galeria_lienzo">
+                    <input type="radio" name="nav" class="Elemento_1" id="A"/>
+                    <input type="radio" name="nav" class="Elemento_2" id="B"/>
+                    <input type="radio" name="nav" class="Elemento_3" id="C"/>
+                    
+                    <div class="Galeria_contenedor">
+                        <figure>
+                            <img src="Images/Imagen1.png" alt="" width="600px"/>
+                        </figure>
+                        
+                        <figure>
+                            <img src="Images/Imagen2.jpg" alt="" width="600px"/>
+                        </figure>
+                        
+                        <figure>
+                            <img src="Images/Imagen1.png" alt="" width="600px"/>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="Controles">
+                <label for="A"></label> 
+                <label for="B"></label> 
+                <label for="C"></label> 
+            </div>
+            <section class="Tienda">
+                <article>
+                    <figure><center> <img src="Images/Clientes.png" alt=""/> </center></figure>
+                    <h3>MÓDULO CLIENTES</h3>
+                    <p>Los Clientes a través de este módulo podrán realizar
+                    la consulta de productos y hacer los pedidos.</p>
+                </article>
+            </section>
+        </div>
     </body>
 </html>
