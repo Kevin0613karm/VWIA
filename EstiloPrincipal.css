@@ -101,11 +101,24 @@
     top: -26px;
 }
 label{
-    margin: 5px;
+    margin: 2px;
+    border: solid 1px #520452;
+    border: solid 2px magenta;
     width: 20px;
     height: 20px;
     border-radius: 100px;
-    background: green;
+    background: #3a9d93;
+    display: block;
+    cursor: pointer;
+}
+.Modulos{
+    margin: 2px;
+    border: solid 1px #520452;
+    border: solid 2px magenta;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: #3a9d93;
     display: block;
     cursor: pointer;
 }
