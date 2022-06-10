@@ -10,15 +10,19 @@
     margin: auto;
     box-sizing: border-box;
     overflow: hidden;
+    background: #7ef5e6;
 }
 .Cabecera{
     display: flex;
     justify-content: space-between;
     position: relative;
     height: 220px;
+    background: #008B99;
+    padding: 5px;
+    border-radius: 3px;
 }
 .cabecera_img{
-    width: 100;
+    width: 170px;
     position: absolute;
     left: 10px;
 }
@@ -36,7 +40,7 @@
 .nav{
     margin: 10px 10px 0 0;
     position: absolute;
-    background: whitesmoke;
+    background: #008B99;
     height: auto;
     width: unset;
     border: none;
@@ -49,15 +53,13 @@
     padding: 5px;
     border-radius: 3px;
 }
-.link_2{
-    
+.link_2{ 
     background: #045B62;
     color: white;
     padding: 5px;
     border-radius: 3px;
 }
 .link_3{
-    
     background: #045B62;
     color: white;
     padding: 5px;
@@ -66,7 +68,7 @@
 .Galeria{
     width: 100%;
     height: 400px;
-    background: #87b8b2;
+    background: #7ef5e6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,9 +103,8 @@
     top: -26px;
 }
 label{
-    margin: 2px;
-    border: solid 1px #520452;
-    border: solid 2px magenta;
+    margin: 5px;
+    border: solid 3px magenta;
     width: 20px;
     height: 20px;
     border-radius: 100px;
@@ -111,14 +112,103 @@ label{
     display: block;
     cursor: pointer;
 }
-.Modulos{
-    margin: 2px;
-    border: solid 1px #520452;
-    border: solid 2px magenta;
-    width: 20px;
+.Módulos{
+    background: #7ef5e6;
+    display: grid;
+    grid-template: repeat(3, 300px)/ repeat(3, 300px);
+    justify-content: center;
+    grid-gap: 16px;
+    width: 100%;
+    height: auto; 
+}
+.Módulos article{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-flow: wrap;
+    border: solid 3px magenta;
+    border-radius:15px;
+    overflow: hidden;
+}
+.Módulos img{
+    position: relative;
+    top: 5px;
+    width: 170px;
+    height: 100px;
+    border-radius: 15px;
+}
+.Módulos div{
+    width: 100%;
+    height: 30px;
+    background: #008B99;
+}
+.Módulos h3{
+    text-align: center;
+    color: #FFFFFF;
+}
+.Módulos p{
+    font: 120% sans-serif;
+    text-align: justify;
+    padding: 15px;
+}
+
+/*******************PIE DE PÁGINA*******************/
+
+.espacio{
+    position: relative;
     height: 20px;
-    border-radius: 100px;
-    background: #3a9d93;
-    display: block;
-    cursor: pointer;
+}
+.piePagina{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 105px;
+    background: #008B99;
+    align-content: center;
+}
+.piePagina footer{
+    text-align: center;
+    color: white;
+}
+.espacio2{
+    position: relative;
+    height: 10px;
+    background: #008B99;
+}
+/*******************MODO RESPONSIVE*******************/
+
+@media screen and (max-width: 600px){
+    .Módulos{
+        grid: repeat(3, 300px)/ repeat(1, 300px);
+    }
+}
+
+@media screen and (max-width: 600px){
+.Cabecera{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 155px;
+}
+.Cabecera figure{
+    width: 150px;
+    margin: auto;
+}
+.cabecera_img{
+    width: 95px;
+    height: 80px;
+}
+.cabecera_h1{
+    position: absolute;
+    top: 5px;
+    left: 100px;
+}
+.cabecera_frase{
+    position: absolute;
+    top: 130px;
+    left: 100px;
+}
+.nav{
+    display: none;
+}
 }
