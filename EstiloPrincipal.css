@@ -129,6 +129,10 @@ label{
     border: solid 3px magenta;
     border-radius:15px;
     overflow: hidden;
+    cursor: pointer;
+}
+article:active{
+    transform: scale(1.10);
 }
 .Módulos img{
     position: relative;

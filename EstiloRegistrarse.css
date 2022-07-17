@@ -53,3 +53,6 @@ body{
     cursor: pointer;
     border-radius: 7px;
 }
+.btn-registrarse:active {
+    transform:scale(1.10)
+}
