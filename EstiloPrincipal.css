@@ -49,18 +49,21 @@
 }
 .link_1{
     background: #045B62;
+    text-decoration: none;
     color: white;
     padding: 5px;
     border-radius: 3px;
 }
 .link_2{ 
     background: #045B62;
+    text-decoration: none;
     color: white;
     padding: 5px;
     border-radius: 3px;
 }
 .link_3{
     background: #045B62;
+    text-decoration: none;
     color: white;
     padding: 5px;
     border-radius: 3px;
@@ -121,6 +124,17 @@ label{
     width: 100%;
     height: auto; 
 }
+.Módulos a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-flow: wrap;
+    border: solid 3px magenta;
+    border-radius:15px;
+    overflow: hidden;
+    cursor: default;
+}
 .Módulos article{
     display: flex;
     justify-content: center;
@@ -131,7 +145,7 @@ label{
     overflow: hidden;
     cursor: pointer;
 }
-article:active{
+a:active{
     transform: scale(1.10);
 }
 .Módulos img{
