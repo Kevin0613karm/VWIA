@@ -105,6 +105,9 @@
     position: relative;
     top: -26px;
 }
+.yo{
+    opacity: 0;
+}
 label{
     margin: 5px;
     border: solid 3px magenta;
